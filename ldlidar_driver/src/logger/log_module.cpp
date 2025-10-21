@@ -1,10 +1,10 @@
 /**
 * @file         ldlidar_logger.cpp
 * @author       LDRobot (support@ldrobot.com)
-* @brief         
+* @brief
 * @version      0.1
 * @date         2022.08.10
-* @note          
+* @note
 * @copyright    Copyright (c) 2022  SHENZHEN LDROBOT CO., LTD. All rights reserved.
 * Licensed under the MIT License (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
 * limitations under the License.
 **/
 #include "log_module.h"
-
+#include <pthread.h>
 #include <time.h>
 #include <string.h>
 
 #ifndef LINUX
-#include <comutil.h>  
+#include <comutil.h>
 #pragma comment(lib, "comsuppw.lib")
 #else
 #include <stdlib.h>
